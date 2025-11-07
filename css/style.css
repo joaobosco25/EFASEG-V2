@@ -687,3 +687,135 @@ footer .footer-bottom {
     font-size: 16px;
   }
 }
+/* === MENU HAMBÚRGUER (SOMENTE MOBILE) === */
+@media (max-width: 768px) {
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;    
+  }
+  .hamburger {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  header nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #000;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 1rem 0;
+  }
+
+  header nav.active {
+    display: flex;
+  }
+
+  header nav a {
+    color: #fff;
+    padding: 0.8rem;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Ícone do menu */
+  .hamburger {
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  /* === MENU HAMBÚRGUER (APENAS MOBILE) === */
+@media (max-width: 768px) {
+
+  /* Ajustes do header */
+  header .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  /* Esconde o menu padrão */
+  header nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #000;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid #d4af37;
+  }
+
+  /* Exibe o menu quando ativo */
+  header nav.active {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  /* Links do menu */
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Botão hambúrguer */
+  .hamburger {
+    width: 28px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+    border: 2px solid red;
+    
+  }
+
+  .hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #d4af37;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  /* Animação quando ativo */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+
+  /* Animação do menu aparecendo */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+}

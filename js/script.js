@@ -256,3 +256,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Cria o botão hambúrguer dinamicamente
+  const headerContainer = document.querySelector('header .container');
+  const nav = headerContainer.querySelector('nav');
+
+  const hamburger = document.createElement('div');
+  hamburger.classList.add('hamburger');
+  hamburger.innerHTML = '<span></span><span></span><span></span>';
+  headerContainer.appendChild(hamburger);
+
+  // Controle de abrir/fechar menu
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    nav.classList.toggle('active');
+  });
+});
+
