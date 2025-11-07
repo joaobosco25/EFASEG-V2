@@ -160,15 +160,40 @@ footer .footer-bottom {
   background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
   color: #ffffff;
   padding: 60px 0;
-  border: 2px red solid;
 }
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* garante altura de destaque */
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: background 1s ease-in-out;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
 
 .hero .container {
   display: flex;
   grid-template-columns: 1fr 1fr;
   gap: 90px;
   align-items: center;
-    border: 2px rgb(76, 0, 255) solid;
 }
 
 .hero h1 {
@@ -176,7 +201,6 @@ footer .footer-bottom {
   font-weight: 800;
   margin-bottom: 20px;
   line-height: 1.2;
-    border: 2px red solid;
     text-align: center;
 
 }
@@ -292,6 +316,8 @@ footer .footer-bottom {
 
 .courses {
   padding: 60px 0;
+  border: solid 2px red;
+  justify-content: center;
 }
 
 .courses h2 {
