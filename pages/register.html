@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cadastro de Vigilantes - Inscreva-se para Formação ou Reciclagem na EFASEG.">
+  <title>Cadastro - EFASEG</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo.png" alt="EFASEG Logo">
+        <span>EFASEG</span>
+      </a>
+      <nav>
+        <a href="../index.html">Início</a>
+        <a href="about.html">Sobre</a>
+        <a href="courses.html">Cursos</a>
+        <a href="profession.html">Profissão</a>
+        <a href="portaria16.html">Portaria 16</a>
+        <a href="register.html">Cadastro</a>
+        <a href="contact.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container">
+        <h1>Cadastro de Vigilantes</h1>
+        <p class="subtitle">Inscreva-se para Formação ou Reciclagem</p>
+      </div>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section class="form-section">
+      <div class="container">
+        <div class="form-container">
+          <form id="registerForm">
+            <!-- Name Field -->
+            <div class="form-group">
+              <label for="name">Nome Completo *</label>
+              <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+            </div>
+
+            <!-- CPF Field -->
+            <div class="form-group">
+              <label for="cpf">CPF *</label>
+              <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="14" required>
+            </div>
+
+            <!-- RG Field -->
+            <div class="form-group">
+              <label for="rg">RG *</label>
+              <input type="text" id="rg" name="rg" placeholder="Digite seu RG" required>
+            </div>
+
+            <!-- Formation Type Field -->
+            <div class="form-group">
+              <label for="formationType">Tipo de Inscrição *</label>
+              <select id="formationType" name="formationType" required>
+                <option value="formacao">Formação de Vigilante</option>
+                <option value="reciclagem">Reciclagem</option>
+              </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div style="text-align: center; margin-top: 30px;">
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">Enviar e Ir para WhatsApp</button>
+            </div>
+
+            <!-- Info Message -->
+            <div class="form-info">
+              <p>Após enviar o formulário, você será redirecionado para o WhatsApp para confirmar sua inscrição.</p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Additional Info -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 50px;">
+          <div style="background-color: #f5f5f5; padding: 25px; border-radius: 8px;">
+            <h3 style="color: #000; margin-bottom: 15px;">Formação de Vigilante</h3>
+            <p style="color: #666; margin-bottom: 15px; line-height: 1.6;">Curso completo de 200 horas para quem deseja ingressar na profissão de vigilante patrimonial.</p>
+            <p style="color: #666; font-size: 14px;"><strong>Requisitos:</strong> Idade mínima 21 anos, ensino fundamental completo.</p>
+          </div>
+          <div style="background-color: #f5f5f5; padding: 25px; border-radius: 8px;">
+            <h3 style="color: #000; margin-bottom: 15px;">Reciclagem</h3>
+            <p style="color: #666; margin-bottom: 15px; line-height: 1.6;">Curso obrigatório a cada dois anos para renovação da certificação de vigilante.</p>
+            <p style="color: #666; font-size: 14px;"><strong>Para:</strong> Vigilantes já certificados que precisam renovar sua documentação.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-section">
+        <img src="../images/logo.png" alt="EFASEG Logo">
+        <h3>EFASEG</h3>
+        <p>Formação de Profissionais em Segurança</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contato</h3>
+        <p><strong>Uberlândia (Sede)</strong><br>(34) 99773-8773</p>
+        <p><strong>Belo Horizonte</strong><br>(31) 99280-1003</p>
+      </div>
+      <div class="footer-section">
+        <h3>Redes Sociais</h3>
+        <p>Facebook: EFASEG Formação de Vigilantes-MG<br>Instagram: @efaseguberlandia</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 EFASEG. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
