@@ -72,41 +72,66 @@
         <h2>Nossos Cursos</h2>
         <div class="courses-grid">
           <div class="course-card">
-            <h3>Formação de Vigilante</h3>
+            <h3>Curso de Formação de Vigilante - CFV</h3>
             <p>200 horas de formação completa para quem deseja ingressar na profissão.</p>
             <a href="pages/courses.html">Saiba mais →</a>
           </div>
           <div class="course-card">
-            <h3>Transporte de Valores</h3>
+            <h3>Curso de Extensão em Transporte de Valores - CTV</h3>
             <p>Especialização em transporte seguro de valores e documentos.</p>
             <a href="pages/courses.html">Saiba mais →</a>
           </div>
           <div class="course-card">
-            <h3>Segurança Pessoal</h3>
+            <h3>Curso de Extensão em Escolta Armada - CEA</h3>
             <p>Proteção de pessoas e dignitários com técnicas avançadas.</p>
             <a href="pages/courses.html">Saiba mais →</a>
           </div>
           <div class="course-card">
-            <h3>Escolta Armada</h3>
+            <h3>Curso de Extensão em Segurança Pessoal - CSP</h3>
             <p>Especialização em escolta armada e proteção de bens.</p>
             <a href="pages/courses.html">Saiba mais →</a>
           </div>
           <div class="course-card">
-            <h3>Reciclagem Patrimonial</h3>
+            <h3>Curso de Extensão em Equipamentos Não Letais I - CNL I</h3>
             <p>Aperfeiçoamento do seu curso, exigido na Portaria.</p>
             <a href="pages/courses.html">Saiba mais →</a>
           </div>
           <div class="course-card">
-            <h3>Reciclagem Específicas</h3>
+            <h3>Curso de Extensão em Segurança para Eventos Sociais - CES (Grandes E</h3>
             <p>Aperfeiçoamento dos cursos de extensão.</p>
             <a href="pages/courses.html">Saiba mais →</a>
           </div>
         </div>
-        <div class="courses-center">
+    </section>
+
+    <!--RECICLAGENS-->
+     <section class="reciclagens">
+      <div class="container">
+        <h2>Reciclagens</h2>
+        <div class="courses-grid">
+          <div class="course-card">
+            <h3>Reciclagem da Formação de Vigilante</h3>
+            <p>50 horas de curso para quem deseja renovar e aperfeiçoar o curso de Vigilante.</p>
+            
+          </div>
+          
+          <div class="courses-grid">
+          <div class="course-card">
+            <h3>Reciclagem das Extensões</h3>
+            <p>Fornecemos as Reciclagens de todas as Extensões acima informadas. Para maiores informações 
+              de carga horária e valores, basta clicar abaixo e será redirecionado para o Whatsapp comercial,
+              onde falará diretamente com nosso querido, porém não tão belo, chefe Mauricio Machado.</p>
+              <a href="pages/register.html" class="btn btn-dark">Mauriciola</a>
+        </div>
+      </div>
+          </div>
+
+    
+          <div class="courses-center">
           <a href="pages/courses.html" class="btn btn-primary">Ver Todos os Cursos</a>
         </div>
       </div>
-    </section>
+        </section>    
 
     <!-- WHY CHOOSE US SECTION -->
     <section class="why-choose">
@@ -186,36 +211,7 @@
   </footer>
 
   <script src="js/script.js"></script>
-  <script>
-document.addEventListener("DOMContentLoaded", function() {
-  const hero = document.querySelector(".hero");
   
-  if (!hero) return;
-
-  const images = [
-    "images/Fachada2.webp",
-    "images/Estande de tiro.webp",
-    "images/unnamed.webp",
-    "images/logomarca.png"
-  ];
-
-  let currentIndex = 0;
-
-  // Função para aplicar o background corretamente
-  function setHeroBackground(index) {
-    hero.style.backgroundImage = `url('${images[index]}')`;
-  }
-
-  // Inicia com a primeira imagem
-  setHeroBackground(currentIndex);
-
-  // Troca automática a cada 5 segundos
-  setInterval(() => {
-    currentIndex = (currentIndex + 1) % images.length;
-    setHeroBackground(currentIndex);
-  }, 5000);
-});
-</script>
 
 </body>
 </html>

@@ -6,6 +6,7 @@
   <meta name="description" content="Sobre a EFASEG - Conheça nossa história, missão e valores.">
   <title>Sobre - EFASEG</title>
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./carousel.css">
 </head>
 <body>
   <!-- HEADER -->
@@ -31,11 +32,42 @@
   <main>
     <!-- HERO SECTION -->
     <section class="hero">
-      <div class="container">
-        <h1>Sobre a EFASEG</h1>
-        <p class="subtitle">Conheça nossa história, missão e valores</p>
+  <div class="carousel">
+    <div class="slides">
+      <div class="slide">
+        <img src="../images/logomarca.png" alt="Imagem 1">
+        <div class="hero-text">
+          <h1>Sobre a EFASEG</h1>
+          <p class="subtitle">Conheça nossa história, missão e valores</p>
+        </div>
       </div>
-    </section>
+
+      <div class="slide">
+        <img src="../images/Fachada2.webp" alt="Imagem 2">
+        <div class="hero-text">
+          <h1>Formação de Excelência</h1>
+          <p class="subtitle">Cursos completos para sua carreira em segurança</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="../images/unnamed.webp" alt="Imagem 3">
+        <div class="hero-text">
+          <h1>Unidades em Minas Gerais</h1>
+          <p class="subtitle">Uberlândia, BH, Santa Luzia e Ponte Nova</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+
+    <!-- Indicators -->
+    <div class="indicators"></div>
+  </div>
+</section>
+
 
     <!-- CONTENT SECTION -->
     <section class="content-section">
