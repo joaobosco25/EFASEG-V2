@@ -104,6 +104,11 @@ nav a.active {
 }
 
 /* ============================================
+   CONTACT
+   ============================================ */
+
+
+/* ============================================
    FOOTER
    ============================================ */
 
@@ -150,6 +155,24 @@ footer .footer-bottom {
   text-align: center;
   color: #999;
   font-size: 14px;
+}
+
+footer .footer-section a {
+  color: #999;
+  font-size: 14px;
+  line-height: 3.3;
+  text-decoration: none;
+  display: block;        /* um embaixo do outro, igual aos <p> */
+  margin-bottom: 4px;
+}
+
+footer .footer-section a:hover {
+  color: #D4AF37;        /* destaca no hover com a cor do título */
+}
+
+/* De quebra, deixar o ícone com um tamanho melhor */
+footer .footer-section h3 ion-icon {
+  font-size: 32px;
 }
 
 /* ============================================
