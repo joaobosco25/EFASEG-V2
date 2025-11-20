@@ -143,13 +143,11 @@ footer .footer-section h3 {
   margin-bottom: 10px;
 }
 
-
 footer .footer-section p {
   color: #999;
   font-size: 20px;
   line-height: 1.6;
 }
-
 
 /* footersection2*/
 
@@ -161,7 +159,6 @@ footer .footer-section p {
   display: block;        /* um embaixo do outro, igual aos <p> */
   margin-bottom: 4px;
 }
-
 
 footer .footer-section2 {
   text-align: center;
@@ -248,7 +245,6 @@ footer .footer-section h3 ion-icon {
   z-index: 1;
 }
 
-
 .hero .container {
   display: flex;
   grid-template-columns: 1fr 1fr;
@@ -261,8 +257,7 @@ footer .footer-section h3 ion-icon {
   font-weight: 800;
   margin-bottom: 20px;
   line-height: 1.2;
-    text-align: center;
-
+  text-align: center;
 }
 
 .hero .subtitle {
@@ -446,7 +441,6 @@ footer .footer-section h3 ion-icon {
   justify-content: center;
   border: 2px solid #e0e0e0;
   background-color: #f5f5f5;
-
 }
 
 .reciclagens h2 {
@@ -463,7 +457,7 @@ footer .footer-section h3 ion-icon {
   margin-bottom: 40px;
 }
 
- .course-card2 {
+.course-card2 {
   display: grid;
   border: 3px solid red;
   margin-bottom: 40px;
@@ -512,11 +506,9 @@ footer .footer-section h3 ion-icon {
   text-decoration: underline;
 }
 
-
-.courses-grid1 .course-card {  background-color: #f5f5f5;
+.courses-grid1 .course-card {
+  background-color: #f5f5f5;
 }
-
-
 
 /* ============================================
    WHY CHOOSE US SECTION
@@ -635,71 +627,62 @@ footer .footer-section h3 ion-icon {
 }
 
 /* ============================================
-   FORM SECTION
+   ABOUT PAGE - CARDS
    ============================================ */
 
-.form-section {
-  padding: 60px 0;
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
-.form-container {
-  max-width: 600px;
-  margin: 0 auto;
+.about-card {
   background: #ffffff;
   border: 2px solid #e0e0e0;
   border-radius: 8px;
-  padding: 40px;
+  padding: 25px;
+  transition: all 0.3s ease;
 }
 
-.form-group {
-  margin-bottom: 25px;
+.about-card:hover {
+  border-color: #D4AF37;
+  box-shadow: 0 5px 20px rgba(212, 175, 55, 0.1);
 }
 
-.form-group label {
-  display: block;
-  font-size: 14px;
-  font-weight: 600;
+.about-card h3 {
+  font-size: 20px;
+  font-weight: 700;
   color: #000000;
+  margin-bottom: 12px;
+}
+
+.about-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.about-card ul {
+  margin-left: 20px;
+}
+
+.about-card li {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
   margin-bottom: 8px;
 }
 
-.form-group input,
-.form-group select {
-  width: 100%;
-  padding: 12px;
-  border: 2px solid #e0e0e0;
-  border-radius: 6px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-  transition: border-color 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group select:focus {
-  outline: none;
-  border-color: #D4AF37;
-}
-
-.form-group input::placeholder {
-  color: #999;
-}
-
-.form-info {
-  background-color: rgba(212, 175, 55, 0.1);
-  border: 2px solid #D4AF37;
-  border-radius: 6px;
-  padding: 15px;
+.about-cta {
   text-align: center;
-  margin-top: 25px;
-}
-
-.form-info p {
-  font-size: 14px;
-  color: #000000;
+  margin-top: 40px;
 }
 
 /* ============================================
-   CONTENT SECTIONS
+   CONTENT SECTIONS (igual index)
    ============================================ */
 
 .content-section {
@@ -717,253 +700,87 @@ footer .footer-section h3 ion-icon {
   font-size: 24px;
   font-weight: 700;
   color: #000000;
-  margin: 30px 0 15px;
+  margin: 0 0 15px;
 }
 
 .content-section p {
   font-size: 16px;
   color: #666;
   line-height: 1.8;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .content-section ul {
   margin-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .content-section li {
   font-size: 16px;
   color: #666;
   line-height: 1.8;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 /* ============================================
-   RESPONSIVE DESIGN
+   UNIDADES SECTION
    ============================================ */
 
-@media (max-width: 768px) {
-  nav {
-    gap: 15px;
-    font-size: 12px;
-  }
+.units {
+  padding: 60px 0;
+  background-color: #f5f5f5;
+}
 
-  .hero .container {
-    grid-template-columns: 1fr;
-  }
+.units h2 {
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #000000;
+}
 
-  .hero h1 {
-    font-size: 32px;
-  }
+.units-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
 
-  .hero .buttons {
-    flex-direction: column;
-  }
+.unit-card {
+  background: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
 
-  .btn {
-    width: 100%;
-    text-align: center;
-  }
+.unit-card:hover {
+  border-color: #D4AF37;
+  box-shadow: 0 5px 20px rgba(212, 175, 55, 0.1);
+}
 
-  .courses-grid {
-    grid-template-columns: 1fr;
-  }
+.unit-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 10px;
+}
 
-  .reciclagens-grid {
-    grid-template-columns: 1fr;
-  }
+.unit-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
 
-  .why-choose-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .featured-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .form-container {
-    padding: 25px;
-  }
-
-  footer .container {
-    grid-template-columns: 1fr;
+/* RESPONSIVO PARA AS UNIDADES */
+@media (max-width: 992px) {
+  .units-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 480px) {
-  header .container {
-    flex-direction: column;
-    gap: 15px;
+@media (max-width: 600px) {
+  .units-grid {
+    grid-template-columns: 1fr;
   }
-
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .hero h1 {
-    font-size: 24px;
-  }
-
-  .hero .subtitle {
-    font-size: 16px;
-  }
-
-  .stat-item h3 {
-    font-size: 36px;
-  }
-
-  .courses h2 {
-    font-size: 28px;
-  }
-
-  .reciclagens h2 {
-    font-size: 28px;
-  }
-
-  .why-choose h2 {
-    font-size: 28px;
-  }
-
-  .cta h2 {
-    font-size: 28px;
-  }
-
-  .cta p {
-    font-size: 16px;
-  }
-}
-/* === MENU HAMBÚRGUER (SOMENTE MOBILE) === */
-@media (max-width: 768px) {
-  header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;    
-  }
-  .hamburger {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  header nav {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background: #000;
-    flex-direction: column;
-    align-items: center;
-    display: none;
-    padding: 1rem 0;
-  }
-
-  header nav.active {
-    display: flex;
-  }
-
-  header nav a {
-    color: #fff;
-    padding: 0.8rem;
-    text-decoration: none;
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  /* Ícone do menu */
-  .hamburger {
-    width: 30px;
-    height: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-  }
-
-  /* === MENU HAMBÚRGUER (APENAS MOBILE) === */
-@media (max-width: 768px) {
-
-  /* Ajustes do header */
-  header .container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-  }
-
-  /* Esconde o menu padrão */
-  header nav {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #000;
-    flex-direction: column;
-    text-align: center;
-    padding: 10px 0;
-    border-top: 2px solid #d4af37;
-  }
-
-  /* Exibe o menu quando ativo */
-  header nav.active {
-    display: flex;
-    animation: fadeIn 0.3s ease-in-out;
-  }
-
-  /* Links do menu */
-  header nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 12px 0;
-    width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  /* Botão hambúrguer */
-  .hamburger {
-    width: 28px;
-    height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-
-    border: 2px solid red;
-    
-  }
-
-  .hamburger span {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background: #d4af37;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-  }
-
-  /* Animação quando ativo */
-  .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translateY(8px);
-  }
-  .hamburger.active span:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-8px);
-  }
-
-  /* Animação do menu aparecendo */
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-}
-
 }
