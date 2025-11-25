@@ -21,7 +21,7 @@
         <a href="courses.html">Cursos</a>
         <a href="profession.html">Profissão</a>
         <a href="portaria16.html">Portaria 16</a>
-        <a href="register.html">Cadastro</a>
+        <a href="register.html" class="active">Cadastro</a>
         <a href="contact.html">Contato</a>
       </nav>
     </div>
@@ -32,8 +32,11 @@
     <!-- HERO SECTION -->
     <section class="hero">
       <div class="container">
-        <h1>Cadastro de Vigilantes</h1>
-        <p class="subtitle">Inscreva-se para Formação ou Reciclagem</p>
+        <div>
+          <h1>Cadastro de Vigilantes</h1>
+          <p class="subtitle">Inscreva-se para Formação ou Reciclagem</p>
+          <p>Preencha o formulário abaixo e dê o primeiro passo para sua carreira na segurança privada. Após o envio, você será redirecionado para o WhatsApp para confirmar sua inscrição.</p>
+        </div>
       </div>
     </section>
 
@@ -66,20 +69,14 @@
               <select id="formationType" name="formationType" required>
                 <option value="formacao">Formação de Vigilante</option>
                 <option value="reciclagem">Reciclagem</option>
-
-
-
               </select>
             </div>
 
             <div class="form-group">
-              <label for="formationType">Período</label>
-              <select id="formationType" name="formationType" required>
-                <option value="formacao">Diurno</option>
-                <option value="reciclagem">Noturno</option>
-
-
-
+              <label for="period">Período</label>
+              <select id="period" name="period" required>
+                <option value="diurno">Diurno</option>
+                <option value="noturno">Noturno</option>
               </select>
             </div>
 
@@ -94,33 +91,47 @@
             </div>
           </form>
         </div>
+      </div>
+    </section>
 
-        <!-- Additional Info -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 50px;">
-          <div style="background-color: #f5f5f5; padding: 25px; border-radius: 8px;">
-            <h3 style="color: #000; margin-bottom: 15px;">Formação de Vigilante</h3>
-            <p style="color: #666; margin-bottom: 15px; line-height: 1.6;">Curso completo de 200 horas para quem deseja ingressar na profissão de vigilante patrimonial.</p>
-            <p style="color: #666; font-size: 14px;"><strong>Requisitos:</strong> Idade mínima 21 anos, ensino fundamental completo.</p>
+    <!-- INFO CARDS SECTION -->
+    <section class="courses">
+      <div class="container">
+        <h2>Informações sobre os Cursos</h2>
+        <div class="courses-grid">
+          <div class="course-card">
+            <h3>Formação de Vigilante</h3>
+            <p>Curso completo de 200 horas para quem deseja ingressar na profissão de vigilante patrimonial.</p>
+            <p><strong>Requisitos:</strong> Idade mínima 21 anos, ensino fundamental completo.</p>
           </div>
-          <div style="background-color: #f5f5f5; padding: 25px; border-radius: 8px;">
-            <h3 style="color: #000; margin-bottom: 15px;">Reciclagem</h3>
-            <p style="color: #666; margin-bottom: 15px; line-height: 1.6;">Curso obrigatório a cada dois anos para renovação da certificação de vigilante.</p>
-            <p style="color: #666; font-size: 14px;"><strong>Para:</strong> Vigilantes já certificados que precisam renovar sua documentação.</p>
+          <div class="course-card">
+            <h3>Reciclagem</h3>
+            <p>Curso obrigatório a cada dois anos para renovação da certificação de vigilante.</p>
+            <p><strong>Para:</strong> Vigilantes já certificados que precisam renovar sua documentação.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta">
+      <div class="container">
+        <h2>Dúvidas sobre o Cadastro?</h2>
+        <p>Entre em contato conosco pelo WhatsApp</p>
+        <a href="contact.html" class="btn btn-dark">Fale Conosco</a>
+      </div>
+    </section>
   </main>
 
- <!-- FOOTER -->
+  <!-- FOOTER -->
   <footer>
     <div class="container">
       <div class="footer-section">
-        <img src="images/logo.png" alt="EFASEG Logo">
+        <img src="../images/logo.png" alt="EFASEG Logo">
         <h3>EFASEG</h3>
         <p>Centro de Formação de Profissionais de Segurança</p>
       </div>
-      <div class="footer-section">
+      <div class="footer-section2">
         <h3><ion-icon name="logo-whatsapp"></ion-icon></h3>
         <p><strong>Belo Horizonte - MG</strong><br>(31) 99280-1003</p>
         <p><strong>Ponte Nova - MG</strong><br>(31) 3817-2889</p>
@@ -156,7 +167,9 @@
     </div>
   </footer>
 
-
   <script src="../js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
